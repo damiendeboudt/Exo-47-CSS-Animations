@@ -31,7 +31,8 @@
     border-style: dashed;
     background-color: blue;
     animation-name: rotation-roue;
-    animation-duration: 10s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -39,16 +40,26 @@
     top: 150px;
     position: absolute;
     animation-name: direction-voiture;
-    animation-duration: 10s;
+    animation-duration: 5s;
 }
 
 
 @keyframes direction-voiture {
-
+from{
+    left: 0;
+}
+    to{
+        left: 100%;
+    }
 }
 
 @keyframes rotation-roue {
-
+from{
+    transform: rotate(0deg);
+}
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -108,5 +119,10 @@
 
 
 @keyframes nuage {
-
+from{
+    left: 0;
+}
+    to{
+        left: 100%;
+    }
 }
